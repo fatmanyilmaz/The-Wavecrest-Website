@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css" rel="stylesheet"/>
+    <title>The Wavecrest Hotel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <nav>
+        <div class="nav__bar">
+           <div class="logo">
+              <a href="#">THE WAVECREST</a>
+           </div>
+             <div class="nav__menu__btn" id="menu-btn">
+              <i class="ri-menu-5-line"></i>
+             </div>
+           </div>
+          <ul class="nav__links" id="nav-links">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#rooms">Rooms</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#gallery">Gallery</a></li>
+              <li><a href="#contact">Contact</a></li>
+          </ul>
+        <button class="btn nav__btn">BOOK A ROOM</button>
+    </nav>
+    <div class="section__container header__container" id="home">
+        <p>Experience the Art of Relaxation.</p>
+        <h1>Welcome to The Wavecrest Hotel.</h1>
+
+    </div>
+
+
+  </header>
+
+  <section class="section__container booking__container">
+    <form action="/" class="booking__form">
+      <div class="input__group">
+        <span><i class="ri-calendar-2-fill"></i></span>
+        <div>
+          <label for="check-in">CHECK-IN</label>
+          <input type="text" />
+        </div>
+      </div>
+      <div class="input__group">
+        <span><i class="ri-calendar-2-fill"></i></span>
+        <div>
+          <label for="check-out">CHECK-OUT</label>
+          <input type="text" />
+        </div>
+      </div>
+      <div class="input__group">
+        <span><i class="ri-user-fill"></i></span>
+        <div>
+          <label for="guest">GUESTS</label>
+          <input type="text" />
+        </div>
+      </div>  
+      <div class="input__group input__btn">
+        <button class="btn">BOOK NOW</button>
+      </div>
+    </form>
+  </section>
+
+  <section class="section__container about__container" id="about">
+    <div class="about__image">
+      <img src="images/about1.jpg"  alt="about" />
+      
+    </div>
+    
+    <div class="about__content">
+      <p class="section__subheader">ABOUT US</p>
+      <h2 class="section__header">The Best Holidays Start Here!</h2>
+      <p class="section__description">
+        Welcome to The Wavecrest, where comfort meets elegance. Nestled in the heart of Italy, our hotel offers a perfect blend of modern amenities and warm hospitality. At The Wavecrest, your journey begins with a welcoming smile and ends with unforgettable memories.
+      </p>
+      <div class="about__btn">
+        <button class="btn">Read More</button>
+      </div>
+    </div>
+  
+  </section>
+  <section class="video__section">
+   <video src="images/video3.mp4"
+    width= 100%
+    autoplay
+    muted
+    loop>
+  </video>
+  <div class="video__text">
+    <p>The Wavecrest Hotel</p>
+  </div>
+  </section>
+  
+
+  <section class="section__container room__container" id="rooms">
+  <div class="room__content">
+    <div class="room__text">
+    <p class="section__subheader">ROOMS</p>
+    <h2 class="section__header">Designed for Rest, Created for Comfort.</h2>
+    <p class="section__description">
+      Discover comfort and style in every detail. Our rooms are thoughtfully designed to provide a relaxing atmosphere, combining modern elegance with cozy warmth — the perfect place to unwind after a long day.
+    </p>
+    <div class="room__btn">
+      <button class="btn">See More</button>
+    </div>
+    </div>  
+    <div class="room__slider">
+     <div class="room__img">
+       <div class="item">
+         <img class="room1"src="images/room1.jpg">
+       </div>
+        <div class="item">
+         <img class="room2"src="images/room3.jpg">
+       </div>
+       <div class="item">
+         <img class="room3" src="images/room4.jpg">
+       </div>
+       <div class="item">
+         <img class="room4" src="images/room7.jpg">
+       </div>
+      
+     </div>
+
+     <div class="slider__btn">
+       <button id="prev"><</button>
+       <button id="next">></button>
+     </div>
+
+     <ul class="dots">
+       <li class="active"></li>
+       <li></li>
+       <li></li>
+       <li></li>  
+     </ul>
+  </div>  
+  </div>
+
+  </section>
+
+  <section class="animation__container">
+    <video class="animation__video" src="images/animation1.mp4"
+    width="100%"
+    autoplay
+    loop
+    muted></video>
+
+    <section class="animation__content">
+      <div class="animation__text">
+        <span class="anm first__text">Designed for</span>
+        <span class="anm sec__text"></span>
+      </div>
+    </section>
+
+
+
+
+  </section>
+
+
+<script>
+  const text = document.querySelector(".sec__text");
+  const words = ["Comfort", "Celebrate", "Moments"];
+  let index = 0;
+
+  setInterval(() => {
+    text.textContent = words[index];
+    index = (index + 1) % words.length;
+  }, 4000);
+</script>
+
+
+
+<section class="section__container feature__container" id="services">
+  <div class="feature__content">
+    <p class="section__subheader">SERVİCES</p>
+    <h2 id="featureTitle" class="section__header">
+      Because Great Service Makes the Difference.
+    </h2>
+    <p id="featureDesc" class="section__description">
+      Thoughtful service is at the heart of everything we do. From attentive staff to carefully designed services, we ensure that every detail is handled seamlessly, allowing you to relax and enjoy effortless comfort throughout your stay.
+
+    </p>
+    <div class="room__btn">
+      <button class="btn">Explore</button>
+    </div>
+
+
+  </div>
+
+  <div class="feature__image">
+    
+    <ul class="feature__tabs">
+      <li class="feature__tab active"
+      data-title="Start Your Day Right."
+      data-desc="Begin your morning with a carefully prepared breakfast made from fresh, quality ingredients. Our breakfast experience is designed to energize your day and offer a calm, enjoyable start in a welcoming atmosphere."
+      data-img="images/services7.jpg"> BREAKFAST
+      </li>
+
+      <li class="feature__tab"
+      data-title="Evenings Served with Flavor."
+      data-desc="Enjoy thoughtfully crafted dishes that bring together local flavors and modern cuisine. Whether for a relaxed dinner or a special evening, our dining experience turns every meal into a moment to savor."
+      data-img="images/services4.jpg">DİNNER
+      </li>
+
+      <li class="feature__tab"
+      data-title="Moments Worth Celebrating."
+      data-desc="From intimate gatherings to special occasions, our spaces are designed to celebrate life’s meaningful moments. With attentive service and elegant settings, every celebration becomes truly unforgettable."
+      data-img="images/services3.jpg">CELEBRATE
+      </li>
+    </ul>
+    <img  id="featureImage" src="images/services7.jpg" alt="">
+  </div>
+</section>
+
+
+<script>
+const tabs = document.querySelectorAll(".feature__tab");
+const title = document.getElementById("featureTitle");
+const desc = document.getElementById("featureDesc");
+const image = document.getElementById("featureImage");
+
+
+const defaultTitle = title.textContent;
+const defaultDesc = desc.textContent;
+const defaultImg = image.src;
+
+
+function activateFeature(tab) {
+  tabs.forEach(t => t.classList.remove("active"));
+  tab.classList.add("active");
+
+  title.textContent = tab.dataset.title;
+  desc.textContent = tab.dataset.desc;
+
+  image.classList.add("animate");
+  setTimeout(() => {
+    image.src = tab.dataset.img;
+    image.classList.remove("animate");
+  }, 200);
+}
+
+
+function resetFeature() {
+  tabs.forEach(t => t.classList.remove("active"));
+
+  title.textContent = defaultTitle;
+  desc.textContent = defaultDesc;
+
+  image.classList.add("animate");
+  setTimeout(() => {
+    image.src = defaultImg;
+    image.classList.remove("animate");
+  }, 200);
+}
+
+
+tabs.forEach(tab => {
+  tab.addEventListener("mouseenter", () => activateFeature(tab));
+
+  tab.addEventListener("click", (e) => {
+    e.stopPropagation();
+    activateFeature(tab);
+  });
+});
+
+document.addEventListener("click", (e) => {
+  const featureSection = document.querySelector(".feature__container");
+
+  if (!featureSection.contains(e.target)) {
+    resetFeature();
+  }
+});
+</script>
+
+
+
+<div class="gallery__wrapper" id="gallery">
+
+<div class="gallery__slider" style="
+    --width: 100px;
+    --height: 100px;
+    --quantity: 14;
+  ">
+   <div class="gallery__list">
+     
+     <div class="item" style="--position: 1"><p class="gallery__text">COMFORT</p></div>
+     <div class="item" style="--position: 2"><p class="gallery__text">HOSPİTALITY</p></div>
+     <div class="item" style="--position: 3"><p class="gallery__text">LUXURY</p></div>
+     <div class="item" style="--position: 4"><p class="gallery__text">BOUTIQUE</p></div>
+     <div class="item" style="--position: 5"><p class="gallery__text">URBAN</p></div>
+     <div class="item" style="--position: 6"><p class="gallery__text">SERENİTY</p></div>
+     <div class="item" style="--position: 7"><p class="gallery__text">EXPERIENCE</p></div>
+     <div class="item" style="--position: 8"><p class="gallery__text">SERVICE</p></div>
+     <div class="item" style="--position: 9"><p class="gallery__text">RELAXATION</p></div>
+     <div class="item" style="--position: 10"><p class="gallery__text">ELEGANCE</p></div>
+     <div class="item" style="--position: 11"><p class="gallery__text">MOMENTS</p></div>
+     <div class="item" style="--position: 12"><p class="gallery__text">RETREAT</p></div>
+     <div class="item" style="--position: 13"><p class="gallery__text">CARE</p></div>
+     <div class="item" style="--position: 14"><p class="gallery__text">CELEBRATE</p></div>
+   </div>
+   
+</div>
+
+
+
+<div class="gallery__slider" reverse="true"style="
+    --width: 400px;
+    --height: 450px;
+    --quantity: 14;
+  ">
+   <div class="gallery__list">
+     
+     <div class="item" style="--position: 1"><img src="images/gallery1.jpg" alt=""></div>
+     <div class="item" style="--position: 2"><img src="images/gallery2.jpg" alt=""></div>
+     <div class="item" style="--position: 3"><img src="images/gallery3.jpg" alt=""></div>
+     <div class="item" style="--position: 4"><img src="images/gallery4.jpg" alt=""></div>
+     <div class="item" style="--position: 5"><img src="images/gallery5.jpg" alt=""></div>
+     <div class="item" style="--position: 6"><img src="images/gallery6.jpg" alt=""></div>
+     <div class="item" style="--position: 7"><img src="images/gallery7.jpg" alt=""></div>
+     <div class="item" style="--position: 8"><img src="images/gallery8.jpg" alt=""></div>
+     <div class="item" style="--position: 9"><img src="images/gallery9.jpg" alt=""></div>
+     <div class="item" style="--position: 10"><img src="images/gallery10.jpg" alt=""></div>
+     <div class="item" style="--position: 11"><img src="images/gallery11.jpg" alt=""></div>
+     <div class="item" style="--position: 12"><img src="images/gallery12.jpg" alt=""></div>
+     <div class="item" style="--position: 13"><img src="images/gallery13.jpg" alt=""></div>
+     <div class="item" style="--position: 14"><img src="images/gallery14.jpg" alt=""></div>
+   </div>
+   
+</div>
+</div>
+
+
+  <section class="section__container gallery__container">
+  <div class="gallery__content">
+    <div class="gallery__txt">
+    <p class="section__subheader">GALLERY</p>
+    <h2 class="section__header">A Glimpse into Our World.</h2>
+    <p class="section__description">
+      Discover the atmosphere, design, and memorable moments that define our hotel. Each image captures the essence of comfort, style, and the experience waiting for you.
+    </p>
+    <div class="room__btn">
+      <button class="btn">Show</button>
+    </div>
+   </div> 
+  </div>
+ </section> 
+
+ <footer class="footer" id="contact">
+   <div class="section__container footer__container">
+    <div class="footer__col">
+      <h4>OUICK LINKS</h4>
+      <ul class="footer__links">
+        <li> <a href="#">Browse Destinations</a></li>
+        <li> <a href="#">Special Offers & Packages</a></li>
+        <li> <a href="#">Room Types & Amenities</a></li>
+        <li> <a href="#">Customer Reviews & Ratings</a></li>
+        <li> <a href="#">Travel Tips & Guides</a></li>
+      </ul>
+    </div>
+    <div class="footer__col">
+      <h4>OUR SERVICES</h4>
+      <ul class="footer__links">
+        <li> <a href="#">Concierge Assistance</a></li>
+        <li> <a href="#">Flexible Booking Options</a></li>
+        <li> <a href="#">Airport Transfers</a></li>
+        <li> <a href="#">Wellness & Recreation</a></li>
+      </ul>
+    </div>
+    <div class="footer__col">
+      <h4>CONTACT US</h4>
+      <ul class="footer__links">
+        <li><a href="#">thewavecrest@info.com</a></li>
+      </ul>
+    </div>
+   </div>
+   <div class="footer__bar">
+    All rights reserved.
+   </div>
+  
+
+ </footer>
+
+  
+
+
+
+  <script src="https://unpkg.com/scrollreveal"></script>
+
+  <script src="main.js"></script>
+</body>
+</html>
