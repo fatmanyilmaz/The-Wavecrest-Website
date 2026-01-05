@@ -176,7 +176,7 @@ Bu bölüm, teknik karmaşadan uzak, tamamen kullanıcı odaklı ve kurumsal bir
 
 
 
-The Wavecrest Hotel projesi, modern ön-yüz (front-end) mimarisinin tüm temel bileşenlerini sistematik bir düzen içinde sunan bir yazılım çalışmasıdır.
+# The Wavecrest Hotel projesi, modern ön-yüz (front-end) mimarisinin tüm temel bileşenlerini sistematik bir düzen içinde sunan bir yazılım çalışmasıdır.
 
 Projenin her katmanı, kullanıcıya sunulan görsel verinin teknik doğrulukla işlenmesi prensibiyle geliştirilmiştir.
 
@@ -193,3 +193,6 @@ Projenin Yapısal ve Fiziksel Standartları:
 - Arayüz Tutarlılığı: Projenin başlangıcındaki lüks algısı, en alt bölüme kadar korunan renk paleti ve boşluk (white-space) kullanımıyla fiziksel bir marka kimliği oluşturur.
 
 Bu çalışma; modüler CSS yapısı, saf JavaScript (Vanilla JS) tabanlı etkileşimleri ve temiz kod (Clean Code) standartlarıyla sürdürülebilir bir web arayüzü prototipidir.
+
+
+FATMA NUR YILMAZ
