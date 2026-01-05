@@ -66,11 +66,14 @@ Sağ tarafta markanın vizyonunu anlatan metinsel içerik.
 Bu düzen, görsel ve metin dengesini koruyarak kullanıcıya sade ve etkileyici bir deneyim sunar.
 
 Kullanıcı sayfayı aşağı kaydırdıkça içerikler sırayla ve akıcı animasyonlarla ekrana gelir:
+
+Sıralı Görünüm (Sequential Arrival): Sayfa aşağı kaydırıldığında önce görsel soldan (origin: 'left') yumuşak bir şekilde belirir. Ardından alt başlık, ana başlık ve açıklama metni belirli milisaniyelik farklarla (delay: 500ms, 1000ms, 1500ms) sırayla takip eder.
+
 - Önce “About Us” alt başlığı görünür.
 - Ardından ana başlık gecikmeli olarak ekrana gelir.
 - Son olarak açıklama metni ve Read More butonu ortaya çıkar.
 
-Bu yapı, içeriğin bir anda yüklenmesini engelleyerek okunabilirliği artırır ve kullanıcı ilgisini canlı tutar.
+Kullanıcı Odaklı Akış: Tüm metinlerin aynı anda patlaması yerine sırayla gelmesi, kullanıcının okuma odağını yönlendirir ve sayfa yüklenme algısını (perceived performance) iyileştirir.
 
 # Video 1
 
@@ -127,3 +130,66 @@ Metin animasyonu, videonun durağanlaşmasını engelleyerek kullanıcı ilgisin
 
 # Services
 
+<img width="1372" height="783" alt="Ekran Resmi 2026-01-05 17 07 05" src="https://github.com/user-attachments/assets/41233835-faa5-47b0-9e34-5a5421f3d2ef" />
+
+
+"Services" bölümü, saf JavaScript (Vanilla JS) kullanılarak kurgulanmış, yüksek etkileşimli bir içerik yönetim modülüdür. 
+
+Kullanıcı deneyimini (UX) önceliklendiren bu yapı, otel hizmetlerini dinamik bir şekilde sunar.
+
+- Event-Driven UI: JavaScript addEventListener metodları ile hem Click hem de MouseEnter olayları dinlenir. Bu sayede kullanıcı bir başlığın üzerine geldiği anda içerik akıcı bir şekilde güncellenir.
+
+- Akıllı Sıfırlama Mekanizması (Reset Logic): e.stopPropagation() ve global bir click dinleyicisi sayesinde, kullanıcı etkileşim alanının dışına tıkladığında içerik otomatik olarak varsayılan (default) durumuna geri döner.
+
+- Görsel Geçiş Efektleri: CSS animasyonları (animate class) JavaScript ile senkronize edilerek, görsellerin değişimi sırasında gözü yormayan yumuşak bir ölçeklendirme ve opaklık geçişi sağlanmıştır.
+
+
+# Gallery 
+
+<img width="1107" height="849" alt="Ekran Resmi 2026-01-05 23 10 06" src="https://github.com/user-attachments/assets/baf9ac21-369e-4737-a758-609ec29dd4d1" />
+
+Gallery bölümü, görsel zenginliği Pure CSS animasyonları ve JavaScript etkileşimi ile harmanlayan, projenin vitrin niteliğindeki alanıdır.
+
+Bu bölüm, statik görselleri dinamik bir akışa dönüştürerek markanın vizyonunu ("A Glimpse into Our World") modern bir yaklaşımla sunar.
+
+Bu bileşende uygulanan etkileşimler, projenin detaylara verdiği önemi kanıtlamaktadır:
+
+- Hover ile Dinamik Akış Kontrolü (Smart Animation Control): Kullanıcı galerideki bir görsele odaklandığında, animation-play-state: paused özelliği devreye girer. Bu sayede sonsuz döngü (infinite scroll) anlık olarak durur ve kullanıcının görseli detaylı incelemesine olanak tanır. Bu, hem görseller hem de üzerindeki metin katmanları için senkronize bir şekilde çalışır.
+
+- Seçici Filtreleme ve Odaklanma (Selective Focus & Grayscale Effect): Galeri varsayılan olarak filter: grayscale(1) ile siyah-beyaz bir estetiğe sahiptir. Mouse ile bir fotoğrafın üzerine gelindiğinde (hover), sadece o fotoğraf filter: grayscale(0) ile gerçek renklerine kavuşur. Diğer görsellerin gri tonda kalması, kullanıcının dikkatini seçtiği görsele odaklayan güçlü bir görsel hiyerarşi oluşturur.
+
+- CSS Variables: Galeri hızı, görsel genişliği ve miktarı gibi değerler CSS değişkenleri (--width, --quantity) üzerinden yönetilerek kolayca özelleştirilebilir bir yapı kurulmuştur.
+
+- Keyframe Animations: Görsellerin kesintisiz akışı, autoRun ve reversePlay keyframe animasyonları ile milisaniyelik bir hassasiyetle optimize edilmiştir.
+
+- Mask Image: Galerinin her iki yanında bulunan linear-gradient maskeleri, görsellerin ekranın kenarlarından yumuşak bir şekilde kaybolup belirmesini (fade effect) sağlar.
+
+
+# Footer
+
+<img width="1680" height="370" alt="Ekran Resmi 2026-01-05 23 22 47" src="https://github.com/user-attachments/assets/342f6c21-c182-43a2-aa48-1e9887a5b157" />
+
+
+The Wavecrest Hotel projesinin en alt kısmında yer alan footer bölümü, sitenin genelindeki minimalizm ve zarafet anlayışını son bir dokunuşla mühürler.
+
+Bu bölüm, teknik karmaşadan uzak, tamamen kullanıcı odaklı ve kurumsal bir kimlik sunmak üzere tasarlanmıştır.
+
+
+
+The Wavecrest Hotel projesi, modern ön-yüz (front-end) mimarisinin tüm temel bileşenlerini sistematik bir düzen içinde sunan bir yazılım çalışmasıdır.
+
+Projenin her katmanı, kullanıcıya sunulan görsel verinin teknik doğrulukla işlenmesi prensibiyle geliştirilmiştir.
+
+Projenin Yapısal ve Fiziksel Standartları:
+
+- Tipografik ve Görsel Hiyerarşi: Proje genelinde kullanılan font aileleri ve görsel ağırlıklar, kullanıcının odak noktasını otomatik olarak rezervasyon ve servis gibi kritik eylem alanlarına (Call to Action) yönlendirecek şekilde kalibre edilmiştir.
+
+- Modüler Grid Yapısı: Sayfa düzeni, esnek (fluid) ve modüler bir grid sistemine dayanır; bu sayede farklı ekran çözünürlüklerinde içerik bütünlüğü ve görsel denge korunur.
+
+- İşlevsel Veri Katmanı: Footer ve navigasyon bölümleri, projenin "bilgi mimarisi" (Information Architecture) çerçevesinde; hızlı linkler, kurumsal iletişim verileri ve servis kategorileriyle fiziksel bir dizin yapısı sunar.
+
+- Optimize Edilmiş Medya Entegrasyonu: Yüksek çözünürlüklü görseller ve video arka planları, sayfanın dom yapısına minimum yük bindirecek şekilde optimize edilmiş; görsel kalite ile teknik performans arasındaki denge korunmuştur.
+
+- Arayüz Tutarlılığı: Projenin başlangıcındaki lüks algısı, en alt bölüme kadar korunan renk paleti ve boşluk (white-space) kullanımıyla fiziksel bir marka kimliği oluşturur.
+
+Bu çalışma; modüler CSS yapısı, saf JavaScript (Vanilla JS) tabanlı etkileşimleri ve temiz kod (Clean Code) standartlarıyla sürdürülebilir bir web arayüzü prototipidir.
